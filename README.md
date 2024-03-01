@@ -6,13 +6,13 @@ This repository contains code for a machine learning model to detect Polycystic 
 ## Model Overview
 The model consists of the following components:
 
-1. Preprocessing: The ultrasound images undergo preprocessing steps to enhance quality and remove noise.
-2. Base Models:
-   - Xception Model: A pre-trained Xception model is fine-tuned on the dataset to extract features from the ultrasound images.
-   - PCOSprediction Model: A custom-trained model specifically designed for PCOS detection, integrated as one of the base models.
-3. Ensemble Learning:
+1. **Preprocessing**: The ultrasound images undergo preprocessing steps to enhance quality and remove noise.
+2. **Base Models**:
+   - **Xception Model**: A pre-trained Xception model is fine-tuned on the dataset to extract features from the ultrasound images.
+   - **PCOSprediction Model**: A custom-trained model specifically designed for PCOS detection, integrated as one of the base models.
+3. **Ensemble Learning**:
    - Stacking Ensemble: A stacking ensemble approach is employed, combining predictions from multiple base models, including PCOSprediction, along with other classifiers.
-4. Meta Learner:
+4. **Meta Learner**:
    - XGBoost: The meta learner combines the predictions from the base models to generate the final prediction.
 
 ## Requirements
